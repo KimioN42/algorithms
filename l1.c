@@ -231,7 +231,7 @@ void print_list(node *head) {
 		}
 	}
 	if(j == position) {
-		printf("Here's the freaking list you asked for, paguso:\n");
+		printf("Here's the list you asked for:\n");
 		while (head->next != NULL) {
 			if(i!=0) //o head n pode ser printado, pq nulo
 				printf("%d ==> ", head->data);
@@ -239,9 +239,9 @@ void print_list(node *head) {
 			i++;
 		}
 		if(i==0)
-			printf("Well, it's fucking empty, you happy?!");
+			printf("Well, it's empty");
 		else
-			printf("%d <== END OF THE FUCKING LIST", head->data);
+			printf("%d <== END OF THE LIST", head->data);
 		printf("\n\n");
 	}
 }
