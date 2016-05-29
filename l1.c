@@ -51,7 +51,7 @@ void add_data (node *head) {
 			return;
 	}
 	if(i == position) {
-		if(head->tra > 0) //se for filaa
+		if(head->tra > 0) //se for fila
 			enqueue(head, value);
 		else //pilha
 			stack_push(head, value);
@@ -190,9 +190,6 @@ void split_master (node *head, int position) {
 			}
 			stack_push(head->below, head->below->data);
 		}
-		//it's 2:37am, finally fucking done it right
-		//really, spent 2 fucking days finishing off this shit
-		//fuck you acm
 		else {
 			stack_push(head, 1);
 			if(head->below == NULL) {
